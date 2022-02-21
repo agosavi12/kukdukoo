@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KFC Kukdukoo</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="topBar">
+        <a href="#">KFC Kukdukoo</a>
+        <a href="#" class="close-btn"></a>
+      </div>
+      <section>
+        <div class="kudkooImg">
+          <img
+            src="./assets/images/kuduckoo.png"
+            class="img-responsive img-center"
+            alt=""
+          />
+        </div>
+
+        <!--instruction-->
+        <div class="instructions">
+          <h4>Instructions</h4>
+
+          <ul>
+            <li>We really need to hear how loud are your chicken pangs!</li>
+            <li>Scream 'kukdookoo' as loud as you can.</li>
+            <li>The louder you shout, the bigger the discount.</li>
+            <li>
+              There's no limit to your discounts as long as you're claiming
+              them.
+            </li>
+            <li>
+              Tap on the button below to start screaming for your discounts!
+            </li>
+          </ul>
+        </div>
+
+        <!--Screen 2-->
+        <div class="screen popup screen-2" id="screen-2" style="display: none">
+          <div class="overlay"></div>
+          <div class="popupContent">
+            <div class="p_logo">
+              <img
+                src="./assets/images/logo.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="p_content">
+              <h2>Sure, you don’t wanna give access?</h2>
+              <p>
+                We’ll promise to make your shout worth its while with finger
+                lickin’ discounts
+              </p>
+            </div>
+            <div class="btn_group">
+              <button class="p_button active">Go to Settings</button>
+              <button class="p_button">Not Interested</button>
+            </div>
+          </div>
+        </div>
+
+        <!--Screen 3-->
+        <div class="screen popup screen-3" id="screen-3" style="display: none">
+          <div class="overlay"></div>
+          <div class="popupContent">
+            <div class="p_logo">
+              <img
+                src="./assets/images/logo.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="p_content">
+              <h2>We hear your <br />chicken pangs!</h2>
+              <h3>All <span class="decibels">81 decibels</span> worh of it</h3>
+              <img
+                src="./assets/images/piece.png"
+                class="img-responsive img-center gratification"
+                alt=""
+              />
+              <p>
+                Thank you for frying the chicken with the power of your voice!
+              </p>
+            </div>
+            <div class="btn_group">
+              <button class="p_button active">CLAIM YOUR DISCOUNT</button>
+            </div>
+          </div>
+        </div>
+
+        <!--Screen 4-->
+        <div class="screen popup screen-4" id="screen-4" style="display: none">
+          <div class="overlay"></div>
+          <div class="popupContent">
+            <div class="p_logo">
+              <img
+                src="./assets/images/logo.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="p_content">
+              <h2>Woah! That's a loud pang for chicken!</h2>
+              <h3>All <span class="decibels">101 decibels</span> worh of it</h3>
+              <img
+                src="./assets/images/piece2.png"
+                class="img-responsive img-center gratification"
+                alt=""
+              />
+              <p>
+                Thank you for frying the chicken with the power of your voice!
+              </p>
+            </div>
+            <div class="btn_group">
+              <button class="p_button active">CLAIM YOUR DISCOUNT</button>
+            </div>
+          </div>
+        </div>
+
+        <!--Screen 5-->
+        <div class="screen popup screen-5" id="screen-5" style="display: none">
+          <div class="overlay"></div>
+          <div class="popupContent">
+            <div class="p_logo">
+              <img
+                src="./assets/images/logo.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="p_content">
+              <h2>Guess, you <br />must be hungry.</h2>
+
+              <p>
+                Magar har love story starts with a phone number. Give us yours
+                to get your discount.
+              </p>
+            </div>
+            <div class="formGroup">
+              <input type="text" placeholder="+91" />
+              <button class="submit"></button>
+            </div>
+          </div>
+        </div>
+
+        <!--Screen 6-->
+        <div class="screen popup screen-6" id="screen-6">
+          <div class="overlay"></div>
+          <div class="popupContent">
+            <div class="p_logo">
+              <img
+                src="./assets/images/logo.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="p_content">
+              <h2>We heard you.</h2>
+
+              <p>Here is your coupon code for a 20% discount:</p>
+
+              <div id="textToCopy" class="textToCopy">
+                <p>74GHLKZBPJ</p>
+                <button id="copyButton" class="copyButton">
+                  Click to copy
+                </button>
+              </div>
+              <span
+                id="copyResult"
+                style="position: relative; top: -10px; font-weight: 700"
+              ></span>
+
+              <p>Go mad ordering cause <br />duniya chicken-o ka hai mela!</p>
+            </div>
+            <div class="btn_group">
+              <button class="p_button active">CLAIM YOUR DISCOUNT</button>
+            </div>
+          </div>
+        </div>
+
+        <!--Screen 7-->
+        <div class="screen popup screen-7" id="screen-5" style="display: none">
+          <div class="overlay"></div>
+          <div class="popupContent">
+            <div class="p_logo">
+              <img
+                src="./assets/images/logo.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="p_content">
+              <h2>Quitting so soon?</h2>
+
+              <p>You’re missing some finger licking discounts!</p>
+            </div>
+            <div class="btn_group">
+              <button class="p_button active">I wanna continue</button>
+              <button class="p_button">I wanna quit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <script>
+    const answer = document.getElementById("copyResult");
+    const copy = document.getElementById("copyButton");
+    const selection = window.getSelection();
+    const range = document.createRange();
+    const textToCopy = document.getElementById("textToCopy");
+
+    copy.addEventListener("click", function (e) {
+      range.selectNodeContents(textToCopy);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      const successful = document.execCommand("copy");
+      if (successful) {
+        answer.innerHTML = "Copied!";
+      } else {
+        answer.innerHTML = "Unable to copy!";
+      }
+      window.getSelection().removeAllRanges();
+    });
+  </script>
+</html>
